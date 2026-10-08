@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: system-ui, sans-serif;
+  color: #1e293b;
+}
+
+/* Ortadaki beyaz kart */
+.app {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.app h1 {
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #64748b;
+}
+
+/* Input + Ekle butonu satırı */
+.add-row {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 8px;
+}
+
+.add-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.add-row input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.add-row button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-row button:hover {
+  background: #4f46e5;
+}
+
+.counter {
+  color: #64748b;
+  font-size: 14px;
+}
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: white;
+  color: #475569;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: white;
+}
+.empty {
+  text-align: center;
+  color: #94a3b8;
+}
+
+/* Liste */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.todo-text {
+  cursor: pointer;
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
